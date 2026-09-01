@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Soft Shadow Foundation | Together, We Can Create a Better Tomorrow</title>
+<meta name="description" content="Soft Shadow Foundation — serving humanity, animals and the environment from Gurugram, Haryana.">
+<style>
+:root{
+  --green:#075f48; --green2:#0b7a5b; --mint:#eef8f3; --orange:#f28b3c;
+  --ink:#111827; --muted:#5b6472; --line:#dbe7e1; --white:#fff;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--green)}
+.brand img{width:62px;height:62px;object-fit:contain;border-radius:50%}
+.links{display:flex;align-items:center;gap:24px;font-size:14px;font-weight:700}
+.links a:hover{color:var(--green2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:9px;font-weight:800;border:1.5px solid var(--green);cursor:pointer}
+.btn.primary{background:var(--green);color:#fff}.btn.light{background:#fff;color:var(--green)}
+.menu{display:none;border:0;background:none;font-size:26px}
+.hero{padding:54px 0 70px;background:linear-gradient(135deg,#fff 45%,#f2faf6)}
+.hero-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:46px;align-items:center}
+.eyebrow{color:var(--green2);font-weight:900;font-size:19px}
+h1{font-size:clamp(42px,5vw,70px);line-height:1.02;margin:10px 0 18px;letter-spacing:-2px}
+h1 span{color:var(--green2)}
+.lead{font-size:19px;color:#27313c;max-width:570px}
+.youth{margin:24px 0;padding:18px 20px;border:1px solid #91c7b4;border-radius:10px;background:#fff;display:flex;gap:14px}
+.youth-icon{font-size:28px}.youth strong{color:var(--green)}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
+.hero-img{width:100%;height:420px;object-fit:cover;border-radius:18px;box-shadow:0 20px 50px rgba(0,0,0,.18)}
+.section{padding:76px 0}.section.alt{background:#f8fbf9}
+.section-title{text-align:center;margin-bottom:36px}.section-title h2{font-size:31px;margin:0 0 8px;color:var(--green)}
+.section-title p{margin:0;color:var(--muted)}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 8px 22px rgba(10,60,45,.06)}
+.card-body{padding:24px}.card h3{margin:0 0 8px;color:var(--green);font-size:20px}.card p{margin:0;color:var(--muted)}
+.icon{font-size:34px;margin-bottom:8px}
+.youth-band{background:var(--green);color:#fff;border-radius:18px;padding:34px;display:grid;grid-template-columns:190px 1fr;gap:28px;align-items:center}
+.youth-band img{width:190px;height:150px;object-fit:cover;border-radius:100px 100px 18px 18px}.youth-band h2{margin:0 0 8px;font-size:28px}.youth-band p{margin:0 0 15px;color:#e5f4ee}
+.pills{display:flex;gap:18px;flex-wrap:wrap;font-weight:700;font-size:14px}
+.pills span{padding-right:18px;border-right:1px solid rgba(255,255,255,.35)}.pills span:last-child{border:0}
+.impact{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:15px;overflow:hidden}
+.impact div{background:#fff;text-align:center;padding:26px 14px}.impact b{display:block;font-size:23px;color:var(--green)}.impact span{color:var(--muted);font-size:14px}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px}.gallery figure{margin:0}.gallery img{width:100%;height:300px;object-fit:cover;border-radius:14px;display:block}.gallery figcaption{padding:10px 4px;font-weight:800;color:var(--green)}
+.team{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.team-card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;text-align:center}.team-card img{width:100%;height:230px;object-fit:cover}.team-card h3{font-size:15px;margin:12px 5px 2px}.team-card p{font-size:12px;color:var(--muted);margin:0 5px 15px}
+.cta{background:linear-gradient(120deg,#075f48,#064d3c);color:#fff;border-radius:18px;padding:38px 42px;display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{margin:0 0 6px;font-size:30px}.cta p{margin:0;color:#dcefe8}.cta .btn{border-color:#fff}
+footer{background:#064638;color:#dcefe8;padding:50px 0 25px}.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:30px}.foot h3{color:#fff;margin-top:0}.foot p,.foot a{color:#c6dfd6;font-size:14px}.copyright{border-top:1px solid rgba(255,255,255,.15);margin-top:35px;padding-top:18px;font-size:13px;text-align:center;color:#b9d3ca}
+@media(max-width:900px){.links{display:none}.menu{display:block}.hero-grid{grid-template-columns:1fr}.hero-img{height:320px}.work-grid{grid-template-columns:1fr}.team{grid-template-columns:repeat(2,1fr)}.impact{grid-template-columns:repeat(2,1fr)}.foot{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.nav{height:70px}.brand img{width:52px;height:52px}.hero{padding-top:35px}h1{font-size:43px}.youth-band{grid-template-columns:1fr}.youth-band img{width:150px;height:130px}.gallery{grid-template-columns:1fr}.team{grid-template-columns:1fr 1fr}.team-card img{height:190px}.cta{padding:28px;display:block}.cta .btn{margin-top:18px}.foot{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav">
+    <a class="brand" href="#home"><img src="assets/logo.jpg" alt="Soft Shadow Foundation logo"><span>SOFT SHADOW<br>FOUNDATION</span></a>
+    <div class="links">
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#work">Our Work</a>
+      <a href="#impact">Our Impact</a><a href="#team">Our Team</a><a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a><a class="btn primary" href="#donate">DONATE NOW ♥</a>
+    </div>
+    <button class="menu" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<header id="home" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Together, We Can</div>
+      <h1>Create a Better <span>Tomorrow</span></h1>
+      <p class="lead">Helping people, animals &amp; the environment for a better and brighter future.</p>
+      <div class="youth">
+        <div class="youth-icon">♙</div>
+        <div>A process where young people gain the <strong>skills, knowledge, and confidence</strong> to take charge of their lives, make smart decisions, and help their <strong>humanity.</strong></div>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="#donate">DONATE NOW ♥</a>
+        <a class="btn light" href="#contact">JOIN US 👥</a>
+      </div>
+    </div>
+    <img class="hero-img" src="assets/hero-team.jpg" alt="Soft Shadow Foundation team and community">
+  </div>
+</header>
+
+<section id="work" class="section">
+  <div class="container">
+    <div class="section-title"><h2>OUR CORE WORK</h2><p>Small actions, meaningful change.</p></div>
+    <div class="work-grid">
+      <article class="card"><div class="card-body"><div class="icon">♥</div><h3>Humanity &amp; Support</h3><p>We reach out to people in need by supporting food, drinking water, education and other essential needs with dignity and compassion.</p></div></article>
+      <article class="card"><div class="card-body"><div class="icon">🐾</div><h3>Animal Care</h3><p>We care for stray and helpless animals by helping with food, shelter, medical support and compassionate care.</p></div></article>
+      <article class="card"><div class="card-body"><div class="icon">🌱</div><h3>Environment Protection</h3><p>We plant trees and take responsibility for their care, working toward a greener, cleaner and healthier environment.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section alt">
+  <div class="container">
+    <div class="youth-band">
+      <img src="assets/journey-children.jpg" alt="Children supported through community work">
+      <div><h2>Empowering Youth, Building a Better Society</h2>
+      <p>A process where young people gain the skills, knowledge, and confidence to take charge of their lives, make smart decisions, and help their humanity.</p>
+      <div class="pills"><span>⚙ Skills</span><span>▣ Knowledge</span><span>◉ Confidence</span><span>♥ Humanity</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="impact" class="section">
+  <div class="container">
+    <div class="section-title"><h2>OUR IMPACT</h2><p>Our journey is powered by people who care.</p></div>
+    <div class="impact">
+      <div><b>Humanity</b><span>Food, water &amp; education support</span></div>
+      <div><b>Animals</b><span>Care, food &amp; assistance</span></div>
+      <div><b>Environment</b><span>Plantation &amp; tree care</span></div>
+      <div><b>Youth</b><span>Skills, confidence &amp; service</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="section alt">
+  <div class="container">
+    <div class="section-title"><h2>GLIMPSES OF OUR JOURNEY</h2><p>Moments from the work and people who inspire us.</p></div>
+    <div class="gallery">
+      <figure><img src="assets/journey-children.jpg" alt="Children receiving support"><figcaption>Supporting children through care and opportunity</figcaption></figure>
+      <figure><img src="assets/journey-community.jpg" alt="Community outreach"><figcaption>Standing together with our community</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="section">
+  <div class="container">
+    <div class="section-title"><h2>MEET OUR FOUNDING TEAM</h2><p>The people helping lead Soft Shadow Foundation.</p></div>
+    <div class="team">
+      <article class="team-card"><img src="assets/mohit.jpg" alt="Mohit Sehrawat"><h3>Mohit Sehrawat</h3><p>Education &amp; Health</p></article>
+      <article class="team-card"><img src="assets/paras.jpg" alt="Paras Choudhary"><h3>Paras Choudhary</h3><p>Youth Development</p></article>
+      <article class="team-card"><img src="assets/vansh.jpg" alt="Vansh Sharma Adv"><h3>Vansh Sharma Adv</h3><p>Empowerment Lead</p></article>
+      <article class="team-card"><img src="assets/ankit.jpg" alt="Ankit Dalal"><h3>Ankit Dalal</h3><p>Volunteer Coordinator</p></article>
+      <article class="team-card"><img src="assets/jimmy.jpg" alt="Jimmy Sangha"><h3>Jimmy Sangha</h3><p>Special Needs Leader</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="donate" class="section alt">
+  <div class="container">
+    <div class="cta">
+      <div><h2>Be a Part of the Change</h2><p>Your support can bring hope, care and change. Join us in building a better tomorrow.</p></div>
+      <a class="btn light" href="mailto:softshadowfoundation@gmail.com?subject=I%20want%20to%20support%20Soft%20Shadow%20Foundation">CONTACT TO DONATE ♥</a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container foot">
+    <div><h3>SOFT SHADOW FOUNDATION</h3><p>Together, we can create a better tomorrow by serving humanity, caring for animals and protecting our environment.</p></div>
+    <div><h3>Quick Links</h3><p><a href="#about">About Us</a><br><a href="#work">Our Work</a><br><a href="#impact">Our Impact</a><br><a href="#team">Our Team</a><br><a href="#gallery">Gallery</a></p></div>
+    <div><h3>Our Work</h3><p>Humanity &amp; Support<br>Animal Care<br>Environment Protection<br>Youth Empowerment</p></div>
+    <div><h3>Contact Us</h3><p>📧 <a href="mailto:softshadowfoundation@gmail.com">softshadowfoundation@gmail.com</a><br>📍 Gurugram, Haryana, India</p></div>
+  </div>
+  <div class="container copyright">© 2026 Soft Shadow Foundation. All rights reserved.</div>
+</footer>
+</body>
+</html>
